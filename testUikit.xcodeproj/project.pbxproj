@@ -16,6 +16,8 @@
 		1CE045152979190900164458 /* testUikitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE045142979190900164458 /* testUikitTests.swift */; };
 		1CE0451F2979190900164458 /* testUikitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0451E2979190900164458 /* testUikitUITests.swift */; };
 		1CE045212979190900164458 /* testUikitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE045202979190900164458 /* testUikitUITestsLaunchTests.swift */; };
+		1CE0452F29791A0F00164458 /* VideoEditorSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 1CE0452E29791A0F00164458 /* VideoEditorSDK */; };
+		1CE0453129791DBC00164458 /* 30 Minute Timer.mov in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0453029791DBC00164458 /* 30 Minute Timer.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		1CE0451A2979190900164458 /* testUikitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUikitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE0451E2979190900164458 /* testUikitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUikitUITests.swift; sourceTree = "<group>"; };
 		1CE045202979190900164458 /* testUikitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUikitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1CE0453029791DBC00164458 /* 30 Minute Timer.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "30 Minute Timer.mov"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE0452F29791A0F00164458 /* VideoEditorSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +103,7 @@
 		1CE044FC2979190600164458 /* testUikit */ = {
 			isa = PBXGroup;
 			children = (
+				1CE0453029791DBC00164458 /* 30 Minute Timer.mov */,
 				1CE044FD2979190600164458 /* AppDelegate.swift */,
 				1CE044FF2979190600164458 /* SceneDelegate.swift */,
 				1CE045012979190600164458 /* ViewController.swift */,
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = testUikit;
+			packageProductDependencies = (
+				1CE0452E29791A0F00164458 /* VideoEditorSDK */,
+			);
 			productName = testUikit;
 			productReference = 1CE044FA2979190600164458 /* testUikit.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 1CE044F12979190600164458;
+			packageReferences = (
+				1CE0452D29791A0F00164458 /* XCRemoteSwiftPackageReference "vesdk-ios-build" */,
+			);
 			productRefGroup = 1CE044FB2979190600164458 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CE0450A2979190900164458 /* LaunchScreen.storyboard in Resources */,
+				1CE0453129791DBC00164458 /* 30 Minute Timer.mov in Resources */,
 				1CE045072979190900164458 /* Assets.xcassets in Resources */,
 				1CE045052979190600164458 /* Main.storyboard in Resources */,
 			);
@@ -602,6 +614,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1CE0452D29791A0F00164458 /* XCRemoteSwiftPackageReference "vesdk-ios-build" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/imgly/vesdk-ios-build";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1CE0452E29791A0F00164458 /* VideoEditorSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CE0452D29791A0F00164458 /* XCRemoteSwiftPackageReference "vesdk-ios-build" */;
+			productName = VideoEditorSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1CE044F22979190600164458 /* Project object */;
 }
